@@ -1,27 +1,26 @@
-# cyoa-typescript-todolist
+# New Project
 
-# install typescript
+> ✨ Bootstrapped with Create Snowpack App (CSA).
 
-`npm init --y` =>
-`npm i --save-dev typescript` => installs typescript as a dependency
-`npx tsc --init` => creates tsconfig.json
+## Available Scripts
 
-# typescript setup
+### npm start
 
-_/destination/_
+Runs the app in the development mode.
+Open http://localhost:8080 to view it in the browser.
 
-1. create destination folder
+The page will reload if you make edits.
+You will also see any lint errors in the console.
 
-_package.json_
+### npm run build
 
-1. `"scripts": { "start": "tsc --watch" }`
-2. `npm start` will run tsc --watch
+Builds a static copy of your site to the `build/` folder.
+Your app is ready to be deployed!
 
-_tsconfig.json_
+**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.mjs` config file.
 
-1. `"outDir": "./destination"` => anything in our .ts file will be created here instead
-2. `"module": "es6"` =>
+### Q: What about Eject?
 
-_index.html_
+No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
 
-1. `<script src="destination/script.js" defer></script>`
+<!--  -->
