@@ -69,6 +69,37 @@ _index.html_
 3. [DELETE] _.prettierrc_ since we already have the prettier extension installed
 4. [DELETE] _/public/index.css_, _/public/favicon.ico_, _/public/logo.svg_
 
-# uuid
+# uuid library
 
 1. `npm i uuid`
+2. _index.ts_ console.log(`Unique random id: ${uuidv4()}`);
+3. ` npm install -D @types/module_name` removes declaration errors
+
+# jquery library
+
+1. `npm i --save-dev @types/jquery`
+2. `npm install --save jquery`
+3. _index.ts_ => `import $ from "jquery";`
+
+# declaring our ids
+
+1. _index.ts_
+
+`const htmlElement = $<HTMLTypeElement>('#id');`
+this is related to typescript and html
+by defining the `<HTMLTypeElement>` this allows us to define the variable to behave like the HTML
+
+```
+const list = $<HTMLUListElement>('#list');
+const form = $<HTMLFormElement>('#new-task-form');
+const input = $<HTMLInputElement>('#new-task-title');
+```
+
+[Problem]: `<Parameter 'task' implicitly has an 'any' type.>`
+[Solution]:
+type Task = {
+id: string;
+title: string;
+completed: boolean;
+createdAt: Date;
+};

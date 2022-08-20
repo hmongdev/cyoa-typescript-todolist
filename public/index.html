@@ -8,14 +8,16 @@
             content="Web site created using create-snowpack-app"
         />
         <link rel="stylesheet" type="text/css" href="/index.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> -->
         <script type="module" src="/dist/index.js"></script>
         <title>Snowpack App - To Do List</title>
     </head>
     <body>
         <!-- <img id="img" src="/logo.svg" /> -->
-        <canvas id="canvas"> <h1>Hello world!</h1></canvas>
+        <canvas id="canvas"></canvas>
         <center>
-            <ul id="list"></ul>
+            <h1>TypeScript To Do List</h1>
             <form id="new-task-form">
                 <input
                     type="text"
@@ -23,6 +25,7 @@
                     placeholder="Task Here"
                 />
                 <button type="submit">Add Task</button>
+                <ul id="list"></ul>
             </form>
         </center>
     </body>
