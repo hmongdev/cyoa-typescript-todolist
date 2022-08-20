@@ -61,8 +61,14 @@ _index.html_
 <!-- ------------------------------------SNOWPACK SETUP---------------------------------------- -->
 <!-- SNOWPACK is a bundler that will allow our browser to deal with modules -->
 
+# snowpack setup
+
 0. Delete all files
 1. `npx create-snowpack-app . --template @snowpack/app-template-blank-typescript --force`
 2. _package.json_ => only keep "start" and "build" scripts
 3. [DELETE] _.prettierrc_ since we already have the prettier extension installed
 4. [DELETE] _/public/index.css_, _/public/favicon.ico_, _/public/logo.svg_
+
+# uuid
+
+1. `npm i uuid`
